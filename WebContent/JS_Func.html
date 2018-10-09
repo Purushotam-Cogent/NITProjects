@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>!!! JS Function !!!</title>
+<script type="text/javascript">
+
+function show()
+{
+var x=parseInt(document.doc.n1.value);
+var y=parseInt(document.doc.n2.value);
+document.getElementById('op').value=""+(x+y);
+document.getElementById('op').style.fontSize="30px";
+document.getElementById('op').style.color="green";
+document.getElementById('res').style.display="block";
+document.getElementById('res').innerHTML="Result:->"+(x+y);
+document.getElementById('res').style.fontSize='30px';
+document.getElementById('res').style.color='blue';
+document.doc.n1.value="";
+document.doc.n2.value="";
+
+}
+
+</script>
+
+
+
+</head>
+<body>
+<div align="center">
+
+<form name="doc">
+Number :-><input type="text" name="n1"><br>
+Number :-><input type="text" name="n2"><br>
+Result :-><input type="text" id="op" readonly="readonly"><br>
+<input type="button" onclick="show()" value="CallAdd">
+</form>
+</div>
+
+<div style="display: none" id="res"></div>
+
+</body>
+</html>

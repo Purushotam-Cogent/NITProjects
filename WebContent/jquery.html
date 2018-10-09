@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src="jquery-3.3.1.min.js"></script>
+<title>!!!! JQuery Demo !!!!</title>
+<script>
+$(document).ready(function(){
+	alert("welvcome");
+	$("button").click(function(){
+			$("p").hide();
+		
+	});
+});
+
+$(document).ready(function(){
+	$("#show").click(function(){
+			$("p:first").show();
+		
+	});
+});
+
+
+
+</script>
+</head>
+<body>
+
+<h2>Jquery demo</h2>
+<p>This is my Paragraph</p><br>
+<p>This is another paragraph</p>
+
+<button >HideParagraph</button>
+<button id="show">show paragraph</button>
+</body>
+</html>
