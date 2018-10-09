@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>!!! Jquery Demo !!!!</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("h1").click(function(){
+	$("h1").css("background-color","green");
+});
+$("p").click(function(){
+	$("p").css("font-size","30px");
+});
+$("button.hall").click(function(){
+	$("h1").hide();
+	$("p").hide();
+});
+$("button.sall").click(function(){
+		$("h1").show();
+	$("p").show();
+});
+$("button.p1").click(function(){
+	$("p:first").show();
+});
+$("button.p2").click(function(){
+	$("p:eq(1)").show();
+});
+$("button.p3").click(function(){
+	$("p:eq(2)").show();
+});
+
+
+
+});
+
+
+
+</script>
+</head>
+<body style="fon">
+<h1>Welcome to JQuery </h1> click here to change color<br>
+<p>This is Jquery event demo</p><br>click here for font change
+<p>jquery show() & Hide() function call</p><br>click here for font change
+<p>apply some css also in DOM elements</p><br>click here for font change
+
+<button class="hall">Hide ALL </button>
+<button class="sall">Show ALL</button>
+<button class="p1">Show first Paragraph</button>
+<button class="p2">Show Second Paragraph</button>
+<button class="p3">Show Thrid Paragraph</button>
+
+</body>
+</html>

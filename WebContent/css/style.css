@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+h1{
+font-family: serif,cursive;
+color: maroon;
+font: bold;
+font-size: 30px;
+border: 20px;
+border-style: groove;
+border-color: blue;
+border-left:px;
+text-align: center;
+text-shadow: green;
+bo
+}
+p{
+color: #445544;
+text-align:center;
+font-size: 20px;
+
+}
+
+table {
+	border: 2;
+	border-color: red;
+	
+}
+
+tr {
+	border-color: green;
+	background-color: olive;
+}
+
+td{
+	border-color: maroon;
+	border-style: dotted;
+	border-width: 20px;
+}
